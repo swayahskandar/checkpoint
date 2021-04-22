@@ -1,0 +1,22 @@
+.headlist{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+body {
+    background-color: rgb(142 142 167);
+}
+/* section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    } */
+
+/* .prod2{
+    
+    width: 30%;
+}
+.prod3{
+    
+    width: 30%;
+} */
