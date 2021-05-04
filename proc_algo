@@ -1,0 +1,23 @@
+PROCEDURE dot_product ( v1,v2 : ARRAY_OF FLOAT[50];)
+VAR
+ ps:integer=0;
+ BEGIN
+FOR i FROM 0 TO v1.length-1 STEP  DO
+    ps=ps+v1[i]*v2[i]
+END_FOR
+END
+
+ALGORITHM Dot_product(n)
+VAR
+    tab: ARRAY_OF FLOAT[50];
+BEGIN
+tab:=[[1,2,3],[4,5,6],[7,8,9]]
+FOR i FROM 0 TO tab.length STEP 1 DO
+    FOR j FROM i+1 TO tab.length STEP 1 DO
+        IF (dot_product(v1[i],v2[j])=0) THEN
+            Write(v1[i]+"and"+v2[i]+"sont orthogonaux")
+        END_IF
+    END_FOR
+END_FOR
+  
+END
